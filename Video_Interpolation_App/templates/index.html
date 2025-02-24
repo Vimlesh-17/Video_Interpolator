@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video Frame Interpolation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Video Frame Interpolation</h1>
+        <div class="upload-section">
+            <input type="file" id="video-upload" accept="video/*">
+            <select id="model-select">
+                <option value="rife">RIFE</option>
+                <option value="ldmvfi">LDMVFI</option>
+            </select>
+            <button onclick="processVideo()">Process Video</button>
+        </div>
+        <div class="result-section">
+            <div class="video-container" id="input-video"></div>
+            <div class="video-container" id="output-video"></div>
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

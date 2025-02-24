@@ -1,0 +1,10 @@
+# flask==2.0.1
+# flask-socketio==5.1.1
+# opencv-python==4.5.3.56
+flask==2.0.1
+flask-socketio==5.1.1
+numpy==1.23.5  # Try this version first
+opencv-python==4.5.3.56
+tqdm==4.62.2
+python-engineio==4.3.4
+python-socketio==5.8.0

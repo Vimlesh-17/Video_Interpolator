@@ -1,0 +1,44 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #1a1a1a;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.upload-section {
+    background: #2a2a2a;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.video-container {
+    width: 48%;
+    display: inline-block;
+    margin: 1%;
+    background: #333;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.progress-bar {
+    height: 20px;
+    background: #444;
+    border-radius: 10px;
+    margin: 2rem 0;
+}
+
+.progress-bar::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 100%;
+    background: #4CAF50;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
